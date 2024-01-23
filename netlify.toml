@@ -10,5 +10,7 @@
 
 [context.backend]
   command = "npm run build" 
+  publish = "C:/Users/1/Desktop/develompents/Registration/server"
   functions = "./server"
+  
   NODE_VERSION = "18"
