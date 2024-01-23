@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .visible {
+        color: red;
+      }
+    </style>
+    <title>Sign up</title>
+  </head>
+  <body>
+    <form id="registration" method="post">
+      <div class="container">
+        <label for="fullname">
+          <input
+            class="fullname"
+            id="fullname"
+            name="fullname"
+            placeholder="Fullname"
+            required
+          />
+        </label>
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="emploe">Emploe</option>
+          <option value="emploer">Emploer</option>
+        </select>
+
+        <label for="username">
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            name="username"
+            required
+          />
+        </label>
+        <label for="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </label>
+        <label for="confirm__password" id="confirm__password__label">
+          <span class="error__message"></span>
+          <input
+            type="password"
+            id="confirm__password"
+            placeholder="Confrim password"
+            name="confirmPassword"
+            required
+          />
+        </label>
+        <button type="submit" id="btn__submit">Submit</button>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
